@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            text-align: center;
+            position: relative;
+            z-index: 2;
+            padding: 40px;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #777;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .graphic-container img {
+            max-width: 100%;
+            height: 400px;
+        }
+
+        .background-animation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="graphic-container">
+            <img src="https://images.pexels.com/photos/2760243/pexels-photo-2760243.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="Coming Soon Graphic">
+        </div>
+        <h1>Our Website Is Coming Soon</h1>
+        <p>We are working hard to bring you an amazing website. Stay tuned!</p>
+    </div>
+    <div class="background-animation">
+        <!-- Insert background animation here -->
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script>
+        // GSAP animation for the background
+        gsap.to(".background-animation", {
+            duration: 10,
+            backgroundPosition: "100% 50%",
+            ease: "linear",
+            repeat: -1,
+        });
+
+// Additional animations or interactivity can be added here using GSAP or other libraries
+
+    </script>
+</body>
+
+</html>
